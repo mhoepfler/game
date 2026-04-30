@@ -4,9 +4,9 @@ function playGame() {
 
     function getComputerChoice() {
         const randomNumber = Math.random();
-        if (randomNumber < 0.33) return "Stein";
-        if (randomNumber < 0.66) return "Papier";
-        return "Schere";
+        if (randomNumber < 0.33) return "stein";
+        if (randomNumber < 0.66) return "sapier";
+        return "schere";
     }
 
     function getHumanChoice() {
@@ -21,9 +21,9 @@ function playGame() {
         }
 
         const winConditions = {
-            rock: "Schere",
-            paper: "Stein",
-            scissors: "Papier"
+            rock: "schere",
+            paper: "stein",
+            scissors: "papier"
         };
 
         if (winConditions[humanChoice] === computerChoice) {
